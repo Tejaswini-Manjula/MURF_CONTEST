@@ -20,22 +20,26 @@ export interface AppConfig {
 }
 
 export const APP_CONFIG_DEFAULTS: AppConfig = {
-  companyName: 'LiveKit',
-  pageTitle: 'LiveKit Voice Agent',
-  pageDescription: 'A voice agent built with LiveKit',
+  companyName: "Café Coffee Day",
+  pageTitle: "Café Coffee Day – Voice Barista",
+  pageDescription: "Order your favourite Café Coffee Day beverage with a voice AI barista.",
 
   supportsChatInput: true,
-  supportsVideoInput: true,
-  supportsScreenShare: true,
+  supportsVideoInput: false,
+  supportsScreenShare: false,
   isPreConnectBufferEnabled: true,
 
-  logo: '/lk-logo.svg',
-  accent: '#002cf2',
-  logoDark: '/lk-logo-dark.svg',
-  accentDark: '#1fd5f9',
-  startButtonText: 'Start call',
+  // We'll add this logo file in the next sub-step
+  logo: "/ccd-logo.svg",
+  logoDark: "/ccd-logo.svg",
 
-  // for LiveKit Cloud Sandbox
+  // CCD-style colours
+  accent: "#CC0000",      // CCD red
+  accentDark: "#4A1E1E",  // dark coffee brown
+
+  startButtonText: "Start wellness check-in",
+
+  // not using LiveKit Cloud sandbox for now
   sandboxId: undefined,
   agentName: undefined,
 };
